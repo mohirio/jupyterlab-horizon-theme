@@ -2,6 +2,9 @@
 
 VSCode Horizon Theme port for JupyterLab
 
+## Screenshot
+<img src="https://user-images.githubusercontent.com/29782314/59114623-844e7980-8982-11e9-8270-1116333efa18.png" alt="drawing" width="900"/>
+
 ## Prerequisites
 
 * JupyterLab
@@ -30,6 +33,6 @@ jupyter lab build
 
 ## Credit
 
-Thanks to [Horizon Theme for VSCode](https://horizontheme.com) For the great color scheme.
+Thanks to [Horizon Theme for VSCode](https://horizontheme.com) for the great color scheme.
 
 And thanks to [Jupyter Atom Dark Theme](https://github.com/BurglarBenson/Jupyter-Atom-Dark-Theme) for CSS elements styling.
