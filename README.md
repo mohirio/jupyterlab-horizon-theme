@@ -1,12 +1,6 @@
 # @mohirio/jupyterlab-horizon-theme
 
-VSCode Horizon Theme port to JupyterLab
-
-## Credit
-
-[Horizon Theme for VSCode](https://horizontheme.com)
-
-[Jupyter Atom Dark Theme](https://github.com/BurglarBenson/Jupyter-Atom-Dark-Theme)
+VSCode Horizon Theme port for JupyterLab
 
 ## Prerequisites
 
@@ -33,3 +27,9 @@ To rebuild the package and the JupyterLab app:
 npm run build
 jupyter lab build
 ```
+
+## Credit
+
+Thanks to [Horizon Theme for VSCode](https://horizontheme.com) For the great color scheme.
+
+And thanks to [Jupyter Atom Dark Theme](https://github.com/BurglarBenson/Jupyter-Atom-Dark-Theme) for CSS elements styling.

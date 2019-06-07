@@ -1,7 +1,7 @@
 {
   "name": "@mohirio/jupyterlab-horizon-theme",
   "version": "0.1.0",
-  "description": "VSCode Horizon theme port to JupyterLab",
+  "description": "VSCode Horizon Theme port for JupyterLab",
   "author": "Mohammad Almogbel <almogbelmohi@gmail.com>",
   "keywords": [
     "jupyter",
