@@ -19,7 +19,6 @@ body {
     white-space: nowrap;
   }
   
-  
   /* Do some nice things with brackets */
   div.CodeMirror span.CodeMirror-matchingbracket {
       color: var(--horizon-function); 
@@ -95,31 +94,9 @@ body {
       background: var(--horizon-dark-blue);
   }
   
-  
-  
-  .cm-s-jupyter span.cm-property {color: var(--horizon-variable);}
-  .cm-s-jupyter span.cm-attribute {color: var(--horizon-function);}
-  .cm-s-jupyter span.cm-keyword {color: var(--horizon-keyword);}
-  .cm-s-jupyter span.cm-string {color: var(--horizon-string);}
-  .cm-s-jupyter span.cm-operator {color: var(--horizon-dark-fg);}
-  .cm-s-jupyter span.cm-builtin {color: var(--horizon-function);}
-  
-  .cm-s-jupyter span.cm-variable-2 {color: var(--horizon-dark-orange-1);}
-  .cm-s-jupyter span.cm-variable-3 {color: var(--horizon-dark-green);}
-  
-  .cm-s-jupyter span.cm-error {background: var(--horizon-light-bg); color: var(--horizon-error);}
-  .cm-s-jupyter span.cm-bracket {color: var(--horizon-red);}
-  .cm-s-jupyter span.cm-tag {color: var(--horizon-variable);}
-  .cm-s-jupyter span.cm-link {color: var(--horizon-string);}
-  
-  
-  
-  
   /* Center any plots e.g. Matplotlib plots */
   .p-Widget.jp-RenderedImage.jp-mod-trusted.jp-OutputArea-output {
-      /*display: table-cell;*/
       text-align: center;
-      /*vertical-align: middle;*/
   }
   
   .jp-Completer-item.jp-mod-active{
@@ -167,20 +144,40 @@ body {
       background: var(--horizon-dark-bg) !important;
   }
   
-  .widget-box .widget-label{
-      text-align: center;
-  }
+
+  .cm-s-jupyter span.cm-property {color: var(--horizon-variable);}
+  .cm-s-jupyter span.cm-attribute {color: var(--horizon-function);}
+  .cm-s-jupyter span.cm-keyword {color: var(--horizon-keyword);}
+  .cm-s-jupyter span.cm-string {color: var(--horizon-string);}
+  .cm-s-jupyter span.cm-operator {color: var(--horizon-dark-fg);}
+  .cm-s-jupyter span.cm-builtin {color: var(--horizon-function);}
   
-  .widget-dropdown{
-      background-color: rgba(165, 175, 197, .18);
-      border-radius: 5px;
-  }
+  .cm-s-jupyter span.cm-variable-2 {color: var(--horizon-dark-orange-1);}
+  .cm-s-jupyter span.cm-variable-3 {color: var(--horizon-dark-green);}
   
-  .widget-dropdown > select {
-      border-radius: 5px;
-  }
+  .cm-s-jupyter span.cm-error {background: var(--horizon-light-bg);
+    color: var(--horizon-error);}
+  .cm-s-jupyter span.cm-bracket {color: var(--horizon-red);}
+  .cm-s-jupyter span.cm-tag {color: var(--horizon-variable);}
+  .cm-s-jupyter span.cm-link {color: var(--horizon-string);}
   
-  .jp-OutputArea-child .jp-OutputArea-output{
-      background-color: #232530;
-      border-radius: 5px;
-  }
+ 
+.widget-box .widget-label{
+    text-align: center;
+}
+    
+.widget-dropdown > select {
+    border-radius: 5px;
+}
+
+.jp-OutputArea-child .jp-OutputArea-output{
+    background-color: #232530;
+    border-radius: 5px;
+}
+
+.widget-dropdown,
+.widget-hslider,
+.widget-checkbox{
+    background-color: #2E303E;
+    border-radius: 5px;
+}

@@ -302,7 +302,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Notebook specific styles */
 
-  --jp-notebook-padding: 0px 10px 0px 0px;
+  --jp-notebook-padding: 10px;
   --jp-notebook-select-background: var(--jp-layout-color1);
   --jp-notebook-multiselected-color: var(--md-blue-50);
 
