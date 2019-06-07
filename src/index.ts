@@ -14,12 +14,19 @@ const plugin: JupyterLabPlugin<void> = {
   requires: [IThemeManager],
   activate: function(app: JupyterLab, manager: IThemeManager) {
     manager.register({
-      name: 'jupyterlab-horizon-theme',
-      isLight: true,
+      name: 'JupyterLab Horizon',
+      isLight: false,
       load: function() {
+        let meta: HTMLMetaElement = document.createElement("meta");
+        meta.name = "theme-color";
+        meta.id = "theme-color-horizon"
+        meta.content = "#1C1E26";
+        document.getElementsByTagName("head")[0].appendChild(meta);
         return manager.loadCSS('@mohirio/jupyterlab-horizon-theme/index.css');
       },
       unload: function() {
+        let meta: HTMLElement = document.getElementById("theme-color-horizon");
+        meta.parentNode.removeChild(meta);
         return Promise.resolve(void 0);
       }
     });

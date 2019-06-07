@@ -4,6 +4,7 @@ dist
 lib
 static
 themes
+package-lock.json
 jupyterlab/static
 jupyterlab/schemas
 jupyterlab/themes
@@ -29,6 +30,7 @@ __pycache__
 \#*#
 .#*
 
+*.ipynb
 *.swp
 *.map
 .idea/
