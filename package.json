@@ -1,6 +1,6 @@
 {
   "name": "@mohirio/jupyterlab-horizon-theme",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "VSCode Horizon Theme port for JupyterLab",
   "author": "Mohammad Almogbel <almogbelmohi@gmail.com>",
   "keywords": [
@@ -14,7 +14,8 @@
     "lib/*.d.ts",
     "lib/*.js.map",
     "lib/*.js",
-    "static/*"
+    "static/*.ttf",
+    "static/index.css"
   ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
