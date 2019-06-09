@@ -14,7 +14,7 @@
     "lib/*.d.ts",
     "lib/*.js.map",
     "lib/*.js",
-    "style/*"
+    "static/*"
   ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -22,7 +22,7 @@
     "lib": "lib/"
   },
   "scripts": {
-    "build": "tsc -b",
+    "build": "tsc -b && webpack",
     "build:webpack": "webpack",
     "clean": "rimraf lib && rimraf static",
     "prepare": "npm run clean && npm run build",
@@ -52,8 +52,7 @@
   },
   "jupyterlab": {
     "extension": true,
-    "themeDir": "style",
-    "themePath": "style/index.css"
+    "themeDir": "static"
   },
   "homepage": "https://github.com/mohirio/jupyterlab-horizon-theme",
   "bugs": {
