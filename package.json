@@ -1,6 +1,6 @@
 {
   "name": "@mohirio/jupyterlab-horizon-theme",
-  "version": "0.1.4",
+  "version": "1.0.0",
   "description": "VSCode Horizon Theme port for JupyterLab",
   "author": "Mohammad Almogbel <almogbelmohi@gmail.com>",
   "keywords": [
@@ -19,6 +19,7 @@
   ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "style": "style/index.css",
   "directories": {
     "lib": "lib/"
   },
@@ -31,8 +32,8 @@
     "watch:webpack": "webpack --watch"
   },
   "dependencies": {
-    "@jupyterlab/application": "^0.19.1",
-    "@jupyterlab/apputils": "^0.19.1"
+    "@jupyterlab/application": "^1.0.0",
+    "@jupyterlab/apputils": "^1.0.0"
   },
   "devDependencies": {
     "rimraf": "~2.6.2",
@@ -53,7 +54,8 @@
   },
   "jupyterlab": {
     "extension": true,
-    "themeDir": "static"
+    "themeDir": "static",
+    "themePath": "static/index.css"
   },
   "homepage": "https://github.com/mohirio/jupyterlab-horizon-theme",
   "bugs": {

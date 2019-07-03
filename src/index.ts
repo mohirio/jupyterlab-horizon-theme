@@ -1,5 +1,6 @@
 import {
-  JupyterLab, JupyterLabPlugin
+  JupyterFrontEnd,
+  JupyterFrontEndPlugin
 } from '@jupyterlab/application';
 
 import {
@@ -9,10 +10,10 @@ import {
 /**
  * A plugin for @mohirio/jupyterlab-horizon-theme
  */
-const plugin: JupyterLabPlugin<void> = {
+const plugin: JupyterFrontEndPlugin<void> = {
   id: '@mohirio/jupyterlab-horizon-theme:plugin',
   requires: [IThemeManager],
-  activate: function(app: JupyterLab, manager: IThemeManager) {
+  activate: function(app: JupyterFrontEnd, manager: IThemeManager) {
     manager.register({
       name: 'JupyterLab Horizon',
       isLight: false,
