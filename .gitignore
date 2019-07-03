@@ -49,5 +49,6 @@ examples/app/schemas
 
 lerna-debug.log
 yarn-error.log
+yarn.lock
 
 junit.xml
