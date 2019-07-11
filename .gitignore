@@ -51,4 +51,6 @@ lerna-debug.log
 yarn-error.log
 yarn.lock
 
+tsconfig.tsbuildinfo
+
 junit.xml

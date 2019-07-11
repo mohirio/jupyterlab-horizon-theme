@@ -8,16 +8,16 @@
     "noUnusedLocals": true,
     "esModuleInterop": true,
     "preserveWatchOutput": true,
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "target": "es2015",
-    "lib": ["dom", "es2015"],
+    "target": "es2017",
     "jsx": "react",
-    "types": [],
-
+    "strict": true,
+    "strictNullChecks": false,
     "outDir": "lib",
-    "rootDir": "src"
+    "rootDir": "src",
+    "types": []
   },
   "include": [
     "src/*"
