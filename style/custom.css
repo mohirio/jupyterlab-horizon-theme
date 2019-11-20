@@ -57,11 +57,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .jp-DirListing-item.jp-mod-running .jp-DirListing-itemIcon:before {
   color: var(--horizon-dark-green);
   content: "\25CF";
-  font-size: 12px;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  top: -2px;
+  font-size: 8px;
+  position: absolute;
   left: -8px;
 }
 
@@ -102,6 +99,12 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 /* Center any plots e.g. Matplotlib plots */
 .p-Widget.jp-RenderedImage.jp-mod-trusted.jp-OutputArea-output {
   text-align: center;
+}
+
+/* Markdown File Icon */
+
+.jp-icon-contrast0[fill] {
+    fill: var(--horizon-dark-red-2);
 }
 
 .jp-Completer-item.jp-mod-active {
