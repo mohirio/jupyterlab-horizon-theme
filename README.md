@@ -3,7 +3,7 @@
 VSCode Horizon Theme port for JupyterLab
 
 ## Screenshot
-<img src="https://user-images.githubusercontent.com/29782314/59114623-844e7980-8982-11e9-8270-1116333efa18.png" alt="drawing" width="900"/>
+<img src="https://user-images.githubusercontent.com/29782314/69231444-6d1be500-0bcc-11ea-9bf6-635e425d69df.png" alt="drawing" width="900"/>
 
 ## Prerequisites
 
