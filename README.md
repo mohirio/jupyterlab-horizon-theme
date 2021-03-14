@@ -7,13 +7,20 @@ VSCode Horizon Theme port for JupyterLab
 
 ## Installation
 
+- PyPI
+```bash
+pip install jupyterlab-horizon-theme
+```
+
+- npm
 ```bash
 jupyter labextension install @mohirio/jupyterlab-horizon-theme
 ```
 
 This theme works best with Chromium based browsers.
 
-To get the same looks as the screenshot, create a shortcut with any browser and tick "Open As Window", you'll have an "Almost" standalone JupyterLab app.
+To get the same looks as the screenshot, create a shortcut with any browser
+and tick "Open As Window", you'll have an "Almost" standalone JupyterLab app.
 
 ## Issues
 Please report any issues you might have and I'll try to get it fixed as soon as possible.
