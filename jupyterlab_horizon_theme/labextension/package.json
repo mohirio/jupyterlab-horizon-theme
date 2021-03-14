@@ -83,7 +83,12 @@
   "jupyterlab": {
     "extension": true,
     "themePath": "static/index.css",
-    "outputDir": "jupyterlab_horizon_theme/labextension"
+    "outputDir": "jupyterlab_horizon_theme/labextension",
+    "_build": {
+      "load": "static/remoteEntry.a22ae48f695c1e0a015e.js",
+      "extension": "./extension",
+      "style": "./style"
+    }
   },
   "homepage": "https://github.com/mohirio/jupyterlab-horizon-theme",
   "bugs": {

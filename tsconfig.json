@@ -3,23 +3,22 @@
     "allowSyntheticDefaultImports": true,
     "composite": true,
     "declaration": true,
-    "noImplicitAny": true,
-    "noEmitOnError": true,
-    "noUnusedLocals": true,
     "esModuleInterop": true,
-    "preserveWatchOutput": true,
+    "incremental": true,
+    "jsx": "react",
     "module": "esnext",
     "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "preserveWatchOutput": true,
     "resolveJsonModule": true,
-    "target": "es2017",
-    "jsx": "react",
-    "strict": true,
-    "strictNullChecks": false,
     "outDir": "lib",
     "rootDir": "src",
+    "strict": true,
+    "strictNullChecks": false,
+    "target": "es2017",
     "types": []
   },
-  "include": [
-    "src/*"
-  ]
+  "include": ["src/*"]
 }
