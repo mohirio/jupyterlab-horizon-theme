@@ -95,7 +95,6 @@ More information are provided within the [ui-tests](./ui-tests/README.md) README
 
 See [RELEASE](RELEASE.md)
 
-
 ## Credit
 
 Thanks to [Horizon Theme for VSCode](https://horizontheme.com) for the great color scheme.
