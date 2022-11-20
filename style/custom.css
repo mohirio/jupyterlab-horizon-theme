@@ -34,6 +34,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .CodeMirror-matchingtag {
   background: rgba(255, 150, 0, 0.3);
 }
+
 .CodeMirror-activeline-background {
   background: #e8f2ff;
 }
@@ -54,16 +55,16 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 /* Makes the running icon a tiny bit bigger */
-.jp-DirListing-item.jp-mod-running .jp-DirListing-itemIcon:before {
+.jp-DirListing-item.jp-mod-running .jp-DirListing-itemIcon::before {
   color: var(--horizon-dark-green);
-  content: "\25CF";
+  content: '\25CF';
   font-size: 8px;
   position: absolute;
   left: -8px;
 }
 
 /* Fix hovering items */
-.p-Menu-item:hover:not([data-type="separator"]),
+.p-Menu-item:hover:not([data-type='separator']),
 .jp-FileBrowser-toolbar.jp-Toolbar .jp-ToolbarButtonComponent:hover,
 .jp-SideBar.p-TabBar.jp-mod-left .p-TabBar-tab:hover {
   background: var(--horizon-dark-bg-hl);
@@ -104,7 +105,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 /* Markdown File Icon */
 
 .jp-icon-contrast0[fill] {
-    fill: var(--horizon-dark-red-2);
+  fill: var(--horizon-dark-red-2);
 }
 
 .jp-Completer-item.jp-mod-active {
@@ -120,10 +121,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 /* Custom line rule */
 .jp-RenderedHTMLCommon hr {
   display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: 0em;
-  margin-right: 0em;
+  margin: 0.5em 0;
   border-style: inset;
   border-width: 1px;
   border-top: 1px solid var(--horizon-dark-fg);
@@ -138,10 +136,6 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   padding-right: var(--jp-code-padding);
 }
 
-.CodeMirror-linenumber {
-  color: var(--horizon-dark-gray);
-}
-
 .cm-s-zenburn {
   background-color: var(--horizon-dark-bg);
   color: var(--horizon-dark-fg);
@@ -154,18 +148,23 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .cm-s-jupyter span.cm-property {
   color: var(--horizon-variable);
 }
+
 .cm-s-jupyter span.cm-attribute {
   color: var(--horizon-function);
 }
+
 .cm-s-jupyter span.cm-keyword {
   color: var(--horizon-keyword);
 }
+
 .cm-s-jupyter span.cm-string {
   color: var(--horizon-string);
 }
+
 .cm-s-jupyter span.cm-operator {
   color: var(--horizon-dark-fg);
 }
+
 .cm-s-jupyter span.cm-builtin {
   color: var(--horizon-function);
 }
@@ -173,6 +172,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .cm-s-jupyter span.cm-variable-2 {
   color: var(--horizon-dark-orange-1);
 }
+
 .cm-s-jupyter span.cm-variable-3 {
   color: var(--horizon-dark-green);
 }
@@ -181,12 +181,15 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   background: var(--horizon-light-bg);
   color: var(--horizon-error);
 }
+
 .cm-s-jupyter span.cm-bracket {
   color: var(--horizon-red);
 }
+
 .cm-s-jupyter span.cm-tag {
   color: var(--horizon-variable);
 }
+
 .cm-s-jupyter span.cm-link {
   color: var(--horizon-string);
 }
