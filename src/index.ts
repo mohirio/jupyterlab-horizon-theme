@@ -3,36 +3,47 @@ import {
   JupyterFrontEndPlugin
 } from '@jupyterlab/application';
 
-import {
-  IThemeManager
-} from '@jupyterlab/apputils';
+import { IThemeManager } from '@jupyterlab/apputils';
 
 /**
- * A plugin for @mohirio/jupyterlab-horizon-theme
+ * Initialization data for the jupyterlab-horizon-theme extension.
  */
 const plugin: JupyterFrontEndPlugin<void> = {
   id: '@mohirio/jupyterlab-horizon-theme:plugin',
+  autoStart: true,
   requires: [IThemeManager],
-  activate: function(app: JupyterFrontEnd, manager: IThemeManager) {
+  activate: (app: JupyterFrontEnd, manager: IThemeManager) => {
+    console.log('JupyterLab extension jupyterlab-horizon-theme is activated!');
+    const style = 'jupyterlab_horizon_theme/index.css';
+
     manager.register({
       name: 'JupyterLab Horizon',
       isLight: false,
-      load: function() {
-        let meta: HTMLMetaElement = document.createElement("meta");
-        meta.name = "theme-color";
-        meta.id = "theme-color-horizon"
-        meta.content = "#1C1E26";
-        document.getElementsByTagName("head")[0].appendChild(meta);
-        return manager.loadCSS('@mohirio/jupyterlab-horizon-theme/index.css');
+      load: function () {
+        const meta: HTMLMetaElement = document.createElement('meta');
+        Object.assign(meta, {
+          name: 'theme-color',
+          id: 'theme-color-horizon',
+          content: '#1C1E26'
+        });
+        meta.name = 'theme-color';
+        meta.id = 'theme-color-horizon';
+        meta.content = '#1C1E26';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+        return manager.loadCSS(style);
       },
-      unload: function() {
-        let meta: HTMLElement = document.getElementById("theme-color-horizon");
-        meta.parentNode.removeChild(meta);
-        return Promise.resolve(void 0);
+      unload: function () {
+        const input = document.getElementById(
+          'theme-color-horizon'
+        ) as HTMLMetaElement;
+        const meta: HTMLElement = input;
+        if (meta.parentNode !== null) {
+          meta.parentNode.removeChild(meta);
+        }
+        return Promise.resolve(undefined);
       }
     });
-  },
-  autoStart: true
+  }
 };
 
 export default plugin;
