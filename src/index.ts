@@ -14,7 +14,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
   requires: [IThemeManager],
   activate: (app: JupyterFrontEnd, manager: IThemeManager) => {
     console.log('JupyterLab extension jupyterlab-horizon-theme is activated!');
-    const style = 'jupyterlab_horizon_theme/index.css';
+    const style = '@mohirio/jupyterlab-horizon-theme/index.css';
 
     manager.register({
       name: 'JupyterLab Horizon',

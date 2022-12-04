@@ -43,18 +43,23 @@ fields = ["description", "authors", "urls"]
 [tool.hatch.build]
 artifacts = ["jupyterlab_horizon_theme/labextension"]
 
+
 [tool.hatch.build.targets.wheel.shared-data]
-"jupyterlab_horizon_theme/labextension" = "share/jupyter/labextensions/jupyterlab_horizon_theme"
-"install.json" = "share/jupyter/labextensions/jupyterlab_horizon_theme/install.json"
+"jupyterlab_horizon_theme/labextension" = "share/jupyter/labextensions/@mohirio/jupyterlab-horizon-theme"
+"install.json" = "share/jupyter/labextensions/@mohirio/jupyterlab-horizon-theme/install.json"
 
 [tool.hatch.build.targets.sdist]
+artifacts = ["jupyterlab_horizon_theme/labextension"]
 exclude = [".github"]
+
+[tool.hatch.build.hooks.version]
+path = "jupyterlab_horizon_theme/_version.py"
 
 [tool.hatch.build.hooks.jupyter-builder]
 dependencies = ["hatch-jupyter-builder>=0.5"]
 build-function = "hatch_jupyter_builder.npm_builder"
 ensured-targets = [
-    "jupyterlab_horizon_theme//labextension/package.json",
+    "jupyterlab_horizon_theme/labextension/package.json",
 ]
 skip-if-exists = ["jupyterlab_horizon_theme/labextension/static/style.js"]
 
