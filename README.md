@@ -1,7 +1,10 @@
-# jupyterlab_horizon_theme
+# JupyterLab Horizon Theme
 
 [![Github Actions Status](https://github.com/mohirio/jupyterlab-horizon-theme/workflows/Build/badge.svg)](https://github.com/mohirio/jupyterlab-horizon-theme/actions/workflows/build.yml)
+
 VSCode Horizon Theme port for JupyterLab
+
+<img src="https://user-images.githubusercontent.com/29782314/205481377-6d9266ef-6c88-442b-9aca-64c1d20762ee.png" alt="drawing" width="900"/>
 
 ## Requirements
 
@@ -12,7 +15,7 @@ VSCode Horizon Theme port for JupyterLab
 To install the extension, execute:
 
 ```bash
-pip install jupyterlab_horizon_theme
+pip install jupyterlab-horizon-theme
 ```
 
 ## Uninstall
@@ -20,7 +23,7 @@ pip install jupyterlab_horizon_theme
 To remove the extension, execute:
 
 ```bash
-pip uninstall jupyterlab_horizon_theme
+pip uninstall jupyterlab-horizon-theme
 ```
 
 ## Contributing
