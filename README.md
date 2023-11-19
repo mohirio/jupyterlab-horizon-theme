@@ -1,6 +1,6 @@
 # jupyterlab_horizon_theme
 
-[![Github Actions Status](https://github.com/mohirio/jupyterlab-horizon-theme.git/workflows/Build/badge.svg)](https://github.com/mohirio/jupyterlab-horizon-theme.git/actions/workflows/build.yml)
+[![Github Actions Status](https://github.com/mohirio/jupyterlab-horizon-theme/workflows/Build/badge.svg)](https://github.com/mohirio/jupyterlab-horizon-theme/actions/workflows/build.yml)
 VSCode Horizon Theme port for JupyterLab
 
 ## Requirements
