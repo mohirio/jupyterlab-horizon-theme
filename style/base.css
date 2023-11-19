@@ -89,10 +89,6 @@ body {
   color: var(--horizon-dark-fg);
 }
 
-.cm-s-zenburn {
-  background: var(--horizon-dark-bg) !important;
-}
-
 .cm-s-jupyter span.cm-property {
   color: var(--horizon-variable);
 }
