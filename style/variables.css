@@ -42,13 +42,14 @@ all of MD as it is not optimized for dense, information rich UIs.
   --horizon-dark-silver: #aaa;
   --horizon-dark-purple: #b877db;
   --horizon-dark-orange-2: #e5c07b;
-  --horizon-dark-bg-hl: #232530;
+  --horizon-dark-bg-hl: #6C6F934D;
+  --horizon-dark-bg-hl-unfocused: #6c6f932d;
   --horizon-dark-black: #0f1011;
   --horizon-dark-gutter: #2e303e;
   --horizon-dark-fg: #abb2bf;
   --horizon-dark-green: #29d398;
   --horizon-dark-red-2: #e95678;
-  --horizon-dark-orange-1: #d19a66;
+  --horizon-dark-orange-1: #FAB795E6;
   --horizon-dark-mono-3: #5c6370;
   --horizon-dark-accent: #6c6f93;
   --horizon-dark-bg: #1c1e26;
@@ -58,7 +59,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --horizon-accent-1: #6c6f93;
   --horizon-error: #f43e5c;
   --horizon-accent-2: #e95378;
-  --horizon-selection: #2e303e;
+  --horizon-selection: #2E303EB3;
   --horizon-keyword: #b877dbe6;
   --horizon-variable: #e95678e6;
   --horizon-function: #25b0bce6;
@@ -289,7 +290,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-prompt-font-family: 'Source Code Pro', monospace;
   --jp-cell-prompt-letter-spacing: 0;
   --jp-cell-prompt-opacity: 1;
-  --jp-cell-prompt-not-active-opacity: 1;
+  --jp-cell-prompt-not-active-opacity: 0.8;
   --jp-cell-prompt-not-active-font-color: var(--horizon-dark-mono-1);
   --jp-cell-inprompt-font-color: var(--jp-brand-color1);
   --jp-cell-outprompt-font-color: var(--horizon-dark-mono-1);
@@ -341,7 +342,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Input field styles */
 
   --jp-input-box-shadow: inset 0 0 2px var(--md-blue-300);
-  --jp-input-active-background: var(--jp-layout-color0);
+  --jp-input-active-background: var(--jp-layout-color1);
   --jp-input-hover-background: var(--jp-layout-color2);
   --jp-input-background: var(--md-grey-800);
   --jp-input-border-color: var(--jp-border-color1);
@@ -349,7 +350,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* General editor styles */
 
-  --jp-editor-selected-background: var(--horizon-dark-bg-hl);
+  --jp-editor-selected-background: var(--horizon-dark-bg-hl-unfocused);
   --jp-editor-selected-focused-background: var(--horizon-dark-bg-hl);
   --jp-editor-cursor-color: var(--horizon-dark-blue);
 
@@ -367,8 +368,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-operator-color: var(--horizon-dark-mono-1);
   --jp-mirror-editor-comment-color: var(--horizon-dark-mono-3);
   --jp-mirror-editor-string-color: var(--horizon-dark-orange-1);
-  --jp-mirror-editor-string-2-color: #f50;
-  --jp-mirror-editor-meta-color: #a2f;
+  --jp-mirror-editor-string-2-color: var(--horizon-dark-orange-1);
+  --jp-mirror-editor-meta-color: var(--horizon-dark-purple);
   --jp-mirror-editor-qualifier-color: #555;
   --jp-mirror-editor-builtin-color: var(--horizon-dark-purple);
   --jp-mirror-editor-bracket-color: var(--horizon-dark-mono-1);
@@ -394,12 +395,10 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-search-toggle-off-opacity: 0.6;
   --jp-search-toggle-hover-opacity: 0.8;
   --jp-search-toggle-on-opacity: 1;
-  --jp-search-selected-match-background-color: rgb(255, 225, 0);
-  --jp-search-selected-match-color: black;
-  --jp-search-unselected-match-background-color: var(
-    --jp-inverse-layout-color0
-  );
-  --jp-search-unselected-match-color: var(--jp-ui-inverse-font-color0);
+  --jp-search-selected-match-background-color: var(--horizon-dark-mono-2);
+  --jp-search-selected-match-color: white;
+  --jp-search-unselected-match-background-color: var(--horizon-dark-mono-3);
+  --jp-search-unselected-match-color: var(--horizon-dark-fg);
 
   /* scrollbar related styles. Supports every browser except Edge. */
 
@@ -413,4 +412,48 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-scrollbar-thumb-margin: 3.5px; /* the space in between the sides of the thumb and the track */
   --jp-scrollbar-thumb-radius: 9px; /* set to a large-ish value for rounded endcaps on the thumb */
+
+    /*
+    RTC user specific colors.
+    These colors are used for the cursor, username in the editor,
+    and the icon of the user.
+  */
+
+  --jp-collaborator-color1: #ad4a00;
+  --jp-collaborator-color2: #7b6a00;
+  --jp-collaborator-color3: #007e00;
+  --jp-collaborator-color4: #008772;
+  --jp-collaborator-color5: #0079b9;
+  --jp-collaborator-color6: #8b45c6;
+  --jp-collaborator-color7: #be208b;
+
+  /* Icon colors that work well with light or dark backgrounds */
+  --jp-icon-contrast-color0: var(--md-purple-600);
+  --jp-icon-contrast-color1: var(--md-green-600);
+  --jp-icon-contrast-color2: var(--md-pink-600);
+  --jp-icon-contrast-color3: var(--md-blue-600);
+
+  /* Button colors */
+  --jp-accept-color-normal: var(--md-blue-700);
+  --jp-accept-color-hover: var(--md-blue-800);
+  --jp-accept-color-active: var(--md-blue-900);
+  --jp-warn-color-normal: var(--md-red-700);
+  --jp-warn-color-hover: var(--md-red-800);
+  --jp-warn-color-active: var(--md-red-900);
+  --jp-reject-color-normal: var(--md-grey-600);
+  --jp-reject-color-hover: var(--md-grey-700);
+  --jp-reject-color-active: var(--md-grey-800);
+
+  /* File or activity icons and switch semantic variables */
+  --jp-jupyter-icon-color: #f37626;
+  --jp-notebook-icon-color: #f37626;
+  --jp-json-icon-color: var(--md-orange-500);
+  --jp-console-icon-background-color: var(--md-blue-500);
+  --jp-console-icon-color: white;
+  --jp-terminal-icon-background-color: var(--md-grey-200);
+  --jp-terminal-icon-color: var(--md-grey-800);
+  --jp-text-editor-icon-color: var(--md-grey-200);
+  --jp-inspector-icon-color: var(--md-grey-200);
+  --jp-switch-color: var(--md-grey-400);
+  --jp-switch-true-position-color: var(--md-orange-700);
 }

@@ -1,14 +1,11 @@
-# JupyterLab Horizon Theme
+# jupyterlab_horizon_theme
 
-[![Github Actions Status](https://github.com/mohirio/jupyterlab-horizon-theme/workflows/Build/badge.svg)](https://github.com/mohirio/jupyterlab-horizon-theme/actions/workflows/build.yml)
-
+[![Github Actions Status](https://github.com/mohirio/jupyterlab-horizon-theme.git/workflows/Build/badge.svg)](https://github.com/mohirio/jupyterlab-horizon-theme.git/actions/workflows/build.yml)
 VSCode Horizon Theme port for JupyterLab
-
-<img src="https://user-images.githubusercontent.com/29782314/205481377-6d9266ef-6c88-442b-9aca-64c1d20762ee.png" alt="drawing" width="900"/>
 
 ## Requirements
 
-- JupyterLab >= 3.0
+- JupyterLab >= 4.0.0
 
 ## Install
 
@@ -40,7 +37,7 @@ The `jlpm` command is JupyterLab's pinned version of
 # Clone the repo to your local environment
 # Change directory to the jupyterlab_horizon_theme directory
 # Install package in development mode
-pip install -e .
+pip install -e "."
 # Link your development version of the extension with JupyterLab
 jupyter labextension develop . --overwrite
 # Rebuild extension Typescript source after making changes
@@ -72,7 +69,7 @@ pip uninstall jupyterlab_horizon_theme
 
 In development mode, you will also need to remove the symlink created by `jupyter labextension develop`
 command. To find its location, you can run `jupyter labextension list` to figure out where the `labextensions`
-folder is located. Then you can remove the symlink named `jupyterlab-horizon-theme` within that folder.
+folder is located. Then you can remove the symlink named `@mohirio/jupyterlab-horizon-theme` within that folder.
 
 ### Testing the extension
 
@@ -89,7 +86,7 @@ jlpm test
 
 #### Integration tests
 
-This extension uses [Playwright](https://playwright.dev/docs/intro/) for the integration tests (aka user level tests).
+This extension uses [Playwright](https://playwright.dev/docs/intro) for the integration tests (aka user level tests).
 More precisely, the JupyterLab helper [Galata](https://github.com/jupyterlab/jupyterlab/tree/master/galata) is used to handle testing the extension in JupyterLab.
 
 More information are provided within the [ui-tests](./ui-tests/README.md) README.
