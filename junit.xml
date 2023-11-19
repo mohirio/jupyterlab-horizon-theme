@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="1" failures="0" errors="0" time="1.905">
+  <testsuite name="jupyterlab-horizon-theme" errors="0" failures="0" skipped="0" timestamp="2023-11-19T05:25:21" time="1.479" tests="1">
+    <testcase classname="jupyterlab-horizon-theme should be tested" name="jupyterlab-horizon-theme should be tested" time="0.002">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -4,6 +4,7 @@ import {
 } from '@jupyterlab/application';
 
 import { IThemeManager } from '@jupyterlab/apputils';
+import { ITranslator } from '@jupyterlab/translation';
 
 /**
  * Initialization data for the jupyterlab-horizon-theme extension.
@@ -11,13 +12,20 @@ import { IThemeManager } from '@jupyterlab/apputils';
 const plugin: JupyterFrontEndPlugin<void> = {
   id: '@mohirio/jupyterlab-horizon-theme:plugin',
   autoStart: true,
-  requires: [IThemeManager],
-  activate: (app: JupyterFrontEnd, manager: IThemeManager) => {
+  requires: [IThemeManager, ITranslator],
+  activate: (
+    app: JupyterFrontEnd,
+    manager: IThemeManager,
+    translator: ITranslator
+  ) => {
     console.log('JupyterLab extension jupyterlab-horizon-theme is activated!');
     const style = '@mohirio/jupyterlab-horizon-theme/index.css';
+    const trans = translator.load('jupyterlab');
 
     manager.register({
       name: 'JupyterLab Horizon',
+      displayName: trans.__('JupyterLab Horizon'),
+      themeScrollbars: true,
       isLight: false,
       load: function () {
         const meta: HTMLMetaElement = document.createElement('meta');

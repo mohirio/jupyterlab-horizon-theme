@@ -1,12 +1,15 @@
 *.bundle.*
 lib/
 node_modules/
+*.log
 .eslintcache
 .stylelintcache
 *.egg-info/
 .ipynb_checkpoints
 *.tsbuildinfo
 jupyterlab_horizon_theme/labextension
+# Version file is handled by hatchling
+jupyterlab_horizon_theme/_version.py
 
 # Integration tests
 ui-tests/test-results/
@@ -62,6 +65,7 @@ htmlcov/
 .coverage.*
 .cache
 nosetests.xml
+coverage/
 coverage.xml
 *.cover
 .hypothesis/
@@ -116,3 +120,6 @@ dmypy.json
 
 # OSX files
 .DS_Store
+
+# Yarn cache
+.yarn/
