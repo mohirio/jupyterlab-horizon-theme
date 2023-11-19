@@ -42,14 +42,14 @@ all of MD as it is not optimized for dense, information rich UIs.
   --horizon-dark-silver: #aaa;
   --horizon-dark-purple: #b877db;
   --horizon-dark-orange-2: #e5c07b;
-  --horizon-dark-bg-hl: #6C6F934D;
+  --horizon-dark-bg-hl: #6c6f934d;
   --horizon-dark-bg-hl-unfocused: #6c6f932d;
   --horizon-dark-black: #0f1011;
   --horizon-dark-gutter: #2e303e;
   --horizon-dark-fg: #abb2bf;
   --horizon-dark-green: #29d398;
   --horizon-dark-red-2: #e95678;
-  --horizon-dark-orange-1: #FAB795E6;
+  --horizon-dark-orange-1: #fab795e6;
   --horizon-dark-mono-3: #5c6370;
   --horizon-dark-accent: #6c6f93;
   --horizon-dark-bg: #1c1e26;
@@ -59,7 +59,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --horizon-accent-1: #6c6f93;
   --horizon-error: #f43e5c;
   --horizon-accent-2: #e95378;
-  --horizon-selection: #2E303EB3;
+  --horizon-selection: #2e303eb3;
   --horizon-keyword: #b877dbe6;
   --horizon-variable: #e95678e6;
   --horizon-function: #25b0bce6;
@@ -413,7 +413,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-scrollbar-thumb-margin: 3.5px; /* the space in between the sides of the thumb and the track */
   --jp-scrollbar-thumb-radius: 9px; /* set to a large-ish value for rounded endcaps on the thumb */
 
-    /*
+  /*
     RTC user specific colors.
     These colors are used for the cursor, username in the editor,
     and the icon of the user.

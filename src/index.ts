@@ -22,7 +22,6 @@ const plugin: JupyterFrontEndPlugin<void> = {
     const style = '@mohirio/jupyterlab-horizon-theme/index.css';
     const trans = translator.load('jupyterlab');
 
-
     manager.register({
       name: 'JupyterLab Horizon',
       displayName: trans.__('JupyterLab Horizon'),

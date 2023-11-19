@@ -3,10 +3,10 @@
 | Distributed under the terms of the Modified BSD License.
 |---------------------------------------------------------------------------- */
 
-@import './variables.css';
-@import './urls.css';
-@import './base.css';
-@import './fonts.css';
+@import url('./variables.css');
+@import url('./urls.css');
+@import url('./base.css');
+@import url('./fonts.css');
 
 /* Set the default typography for monospace elements */
 

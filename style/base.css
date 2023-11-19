@@ -2,58 +2,6 @@ body {
   background: #232530;
 }
 
-/* Change the colour of linenumbers */
-.CodeMirror-linenumber {
-  padding: 0 3px 0 5px;
-  min-width: 20px;
-  text-align: right;
-  color: var(--horizon-dark-gray);
-  white-space: nowrap;
-}
-
-/* This is the region where the linenumbers are */
-.CodeMirror-gutters {
-  border-right: 1px solid var(--horizon-dark-bg-hl);
-  background-color: var(--horizon-dark-bg);
-  white-space: nowrap;
-}
-
-/* Do some nice things with brackets */
-div.CodeMirror span.CodeMirror-matchingbracket {
-  color: var(--horizon-function);
-  border-bottom: 1px solid var(--horizon-dark-blue);
-  line-height: 1;
-}
-
-div.CodeMirror span.CodeMirror-nonmatchingbracket {
-  color: var(--horizon-red);
-  border-bottom: 1px solid var(--horizon-dark-red-1);
-  line-height: 0.55;
-}
-
-.CodeMirror-matchingtag {
-  background: rgba(255, 150, 0, 0.3);
-}
-
-.CodeMirror-activeline-background {
-  background: #e8f2ff;
-}
-
-.CodeMirror-selected {
-  background: var(--horizon-selection);
-}
-
-/* selected text highlight */
-.CodeMirror-focused .CodeMirror-selected {
-  background: var(--horizon-selection);
-}
-
-/* Item selected in menu for files and what not */
-.jp-DirListing-item.jp-mod-selected {
-  color: white;
-  background: var(--horizon-dark-bg-hl);
-}
-
 /* Makes the running icon a tiny bit bigger */
 .jp-DirListing-item.jp-mod-running .jp-DirListing-itemIcon::before {
   color: var(--horizon-dark-green);
@@ -141,7 +89,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   color: var(--horizon-dark-fg);
 }
 
-.cm-s-zenburn .CodeMirror-gutters {
+.cm-s-zenburn {
   background: var(--horizon-dark-bg) !important;
 }
 
