@@ -28,18 +28,3 @@ pre {
   color: black;
   background-color: #ddb62b50;
 }
-
-:where(
-    .jp-RenderedText[data-mime-type='application/vnd.jupyter.stderr']
-  ) {
-  color: black;
-  background-color: var(--horizon-);
-}
-
-:where(
-    .jp-RenderedText[data-mime-type='application/vnd.jupyter.stdout']
-    pre
-  ) {
-  /* color: black; */
-  /* background-color: var(--jp-layout-color3); */
-}

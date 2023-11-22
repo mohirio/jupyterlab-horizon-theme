@@ -44,6 +44,7 @@
 ::-webkit-resizer {
   background: var(--horizon-dark-mono-3);
 }
+
 /* Center any plots e.g. Matplotlib plots */
 .p-Widget.jp-RenderedImage.jp-mod-trusted.jp-OutputArea-output {
   text-align: center;
@@ -62,18 +63,13 @@
 
 .jp-DirListing-item.jp-mod-selected {
   background: var(--horizon-dark-bg-hl);
-  color: var(--horizon-dark-fg)
+  color: var(--horizon-dark-fg);
 }
 
-.jp-DirListing-item.jp-mod-selected {
-  background: var(--horizon-dark-bg-hl);
-  color: var(--horizon-dark-fg)
-}
-
-.jp-DirListing-item.jp-mod-running.jp-mod-selected .jp-DirListing-itemIcon::before {
+.jp-DirListing-item.jp-mod-running.jp-mod-selected
+  .jp-DirListing-itemIcon::before {
   color: var(--horizon-dark-green);
 }
-
 
 /* Change the default blue color when hovering the collapser */
 .jp-Notebook .jp-Cell.jp-mod-active .jp-Collapser:hover {
