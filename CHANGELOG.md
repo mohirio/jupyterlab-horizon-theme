@@ -2,6 +2,22 @@
 
 <!-- <START NEW CHANGELOG ENTRY> -->
 
+## 4.0.2
+
+([Full Changelog](https://github.com/mohirio/jupyterlab-horizon-theme/compare/v4.0.1...bda7851fcc950fed3310335f623603e15ff6bdfc))
+
+### Bugs fixed
+
+- Fix issue affecting other themes [#21](https://github.com/mohirio/jupyterlab-horizon-theme/pull/21) ([@mohirio](https://github.com/mohirio))
+
+### Contributors to this release
+
+([GitHub contributors page for this release](https://github.com/mohirio/jupyterlab-horizon-theme/graphs/contributors?from=2023-11-19&to=2023-11-22&type=c))
+
+[@mohirio](https://github.com/search?q=repo%3Amohirio%2Fjupyterlab-horizon-theme+involves%3Amohirio+updated%3A2023-11-19..2023-11-22&type=Issues)
+
+<!-- <END NEW CHANGELOG ENTRY> -->
+
 ## 4.0.1
 
 ([Full Changelog](https://github.com/mohirio/jupyterlab-horizon-theme/compare/3.1.1...c4d87ec9769f9661069ed7c7cf43cca15814f03f))
@@ -21,5 +37,3 @@
 ([GitHub contributors page for this release](https://github.com/mohirio/jupyterlab-horizon-theme/graphs/contributors?from=2022-12-04&to=2023-11-19&type=c))
 
 [@dependabot](https://github.com/search?q=repo%3Amohirio%2Fjupyterlab-horizon-theme+involves%3Adependabot+updated%3A2022-12-04..2023-11-19&type=Issues) | [@mohirio](https://github.com/search?q=repo%3Amohirio%2Fjupyterlab-horizon-theme+involves%3Amohirio+updated%3A2022-12-04..2023-11-19&type=Issues)
-
-<!-- <END NEW CHANGELOG ENTRY> -->
