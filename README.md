@@ -1,8 +1,10 @@
-# jupyterlab_horizon_theme
+# JupyterLab Horizon Theme
 
 [![Github Actions Status](https://github.com/mohirio/jupyterlab-horizon-theme/workflows/Build/badge.svg)](https://github.com/mohirio/jupyterlab-horizon-theme/actions/workflows/build.yml)
 
 VSCode Horizon Theme port for JupyterLab
+
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/29782314/284973087-55dc60bd-52ae-4473-81ca-3d9d537131ed.png" alt="drawing" width="900"/>
 
 ## Requirements
 
@@ -98,6 +100,5 @@ See [RELEASE](RELEASE.md)
 
 ## Credit
 
-Thanks to [Horizon Theme for VSCode](https://horizontheme.com) for the great color scheme.
-
-And thanks to [Jupyter Atom Dark Theme](https://github.com/BurglarBenson/Jupyter-Atom-Dark-Theme) for CSS elements styling.
+Thanks to [Horizon Theme for VSCode](https://github.com/jolaleye/horizon-theme-vscode) for the great color scheme,
+and [Jupyter Atom Dark Theme](https://github.com/BurglarBenson/Jupyter-Atom-Dark-Theme) for CSS elements styling.
