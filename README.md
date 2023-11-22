@@ -100,6 +100,5 @@ See [RELEASE](RELEASE.md)
 
 ## Credit
 
-Thanks to [Horizon Theme for VSCode](https://horizontheme.com) for the great color scheme.
-
-And thanks to [Jupyter Atom Dark Theme](https://github.com/BurglarBenson/Jupyter-Atom-Dark-Theme) for CSS elements styling.
+Thanks to [Horizon Theme for VSCode](https://github.com/jolaleye/horizon-theme-vscode) for the great color scheme,
+and [Jupyter Atom Dark Theme](https://github.com/BurglarBenson/Jupyter-Atom-Dark-Theme) for CSS elements styling.
