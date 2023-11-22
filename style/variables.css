@@ -284,7 +284,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-editor-background: var(--horizon-dark-bg);
   --jp-cell-editor-border-color: var(--horizon-dark-gray);
   --jp-cell-editor-box-shadow: inset 0 0 2px var(--horizon-accent-1);
-  --jp-cell-editor-active-background: var(--jp-layout-color0);
+  --jp-cell-editor-active-background: var(--jp-layout-color1);
   --jp-cell-editor-active-border-color: var(--jp-brand-color1);
   --jp-cell-prompt-width: 55px;
   --jp-cell-prompt-font-family: 'Source Code Pro', monospace;
@@ -341,12 +341,12 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Input field styles */
 
-  --jp-input-box-shadow: inset 0 0 2px var(--md-blue-300);
+  --jp-input-box-shadow: inset 0 0 2px var(--horizon-class);
   --jp-input-active-background: var(--jp-layout-color1);
   --jp-input-hover-background: var(--jp-layout-color2);
   --jp-input-background: var(--md-grey-800);
   --jp-input-border-color: var(--jp-border-color1);
-  --jp-input-active-border-color: var(--jp-brand-color1);
+  --jp-input-active-border-color: var(--jp-brand-class);
 
   /* General editor styles */
 
@@ -454,6 +454,6 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-terminal-icon-color: var(--md-grey-800);
   --jp-text-editor-icon-color: var(--md-grey-200);
   --jp-inspector-icon-color: var(--md-grey-200);
-  --jp-switch-color: var(--md-grey-400);
-  --jp-switch-true-position-color: var(--md-orange-700);
+  --jp-switch-color: var(--jp-accent-color4);
+  --jp-switch-true-position-color: var(--jp-accent-color3);
 }
